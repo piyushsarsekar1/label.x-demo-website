@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's fashion Hub</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.first{
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(label.jpeg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+
+
+}
+.logo{
+font-size: 40px;
+font-weight: bolder;
+
+}
+nav{
+display:flex;
+justify-content: space-between;
+align-items:center;
+padding:20px 60px;
+
+
+}
+nav ul li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-size: 18px;
+}
+.hero-content{
+height:80vh;
+display:flex;
+flex-direction: column;
+justify-content: center;
+padding-left:60px;
+width:45%;
+}
+.hero-content h1{
+font-size:40px;
+margin-bottom:20px;
+line-height: 1.1;
+
+
+}
+.hero-content p{
+font-size:18px;
+margin-bottom:25px;
+line-height: 1.5;
+margin: 20px 0px 30px;
+width:85%;
+line-height:1.6;
+font-size:18px;
+}  
+.hero-content button{
+width:190px;
+padding:14px 20px;
+border:none;
+color:rgb(0, 0, 0);
+font-size:16px;
+cursor: pointer;
+border-radius:6px;
+transition:0.3s;
+
+}
+.hero-content button:hover{
+background-color:#f19003;
+color:white;
+
+}
+nav ul{
+display:flex;
+gap:18px;
+list-style:none;
+transition:0.3s;
+}
+nav ul li a:hover{
+color:#e8dada;
+}
+.categories{
+padding:80px 60px;
+background-color: #ffffff;
+text-align:center;
+background: linear-gradient(to right,#f8f8f8 #eaeaea);
+}
+.categories h2{
+font-size:40px;
+margin-bottom:30px;
+color:#111;
+}
+.category-boxes{
+    display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+.box{
+background-color: white;
+padding:30px 25px;
+width:300px;
+border-radius: 10px;
+background:whitesmoke;
+}
+.box h3{
+font-size:24px;
+margin-bottom:15px;
+
+}
+.box p{
+font-size:16px;
+line-height: 1.6;
+color: #444;
+}
+.featured{
+padding:80px 60px;
+background-color: black;
+text-align:center;
+
+}
+.featured h2{
+font-size:40px;
+margin-bottom:30px;
+color:#ffffff;
+
+}
+
+.featured-cards{
+display:flex;
+justify-content: center;
+gap:30px;
+flex-wrap:wrap;
+}
+.card{
+width:280px;
+background-color: #f8f8f8;
+border-radius: 10px;
+overflow: hidden;
+padding-bottom: 20px;
+}
+.card img{
+width:100%;
+height:320px;
+object-fit: cover;
+}
+.card h3{
+font-size:24px;
+margin:20px 0px 10px;
+
+}
+.box p{
+font-size:16px;
+line-height: 1.6;;
+color:#444;
+}
+.about{
+padding:80px 60px;
+background-color: #f8f8f8;
+text-align: center;
+
+}
+.about h2{
+font-size:40px;
+margin-bottom: 35px;
+color:#111;
+}
+.about p{
+max-width: 800px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#000000;
+}
+.contact{
+padding:80px 60px;
+background-color: white;
+text-align: center;
+
+
+}
+.about-text p{
+font-size: 20px;
+line-height:1.8;
+color:#444;
+margin-bottom: 20px;
+}
+.about-content{
+    max-width:900px;
+    margin:auto;
+
+}
+.contact h2{
+color:#111;
+    font-size: 40px;
+    margin-bottom:30px;
+}
+.contact p{
+
+font-size: 18px;
+color:#444;
+margin-bottom: 10px;
+
+
+}
+.contact-info{
+margin: 8px 0;
+
+
+}
+.contact-info p{
+
+    margin:8px 0;
+
+}
+footer{
+background-color: black;
+color:white;
+text-align: center;
+padding:20px;
+font-size: 16px;
+}
+.box,.box{
+transition:0.3s;
+
+}
+.box:hover, .card:hover{
+
+transform: translateY(-8px);
+box-shadow:0 10px 25px rgba(157, 89, 34, 0.12)
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Mobile Responsive */
+/* About & Contact text */
+
+/* About & Contact text */
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    /* Nav */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        width: 100%;
+        padding-left: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+    .hero-content button {
+        width: 130px;
+        padding: 12px 18px;
+        font-size: 14px;
+        display:block;
+        margin:10px auto 0;
+        margin-bottom: 1px;
+    }
+
+    /* Collections & Featured Cards */
+    .category-boxes, .featured-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .box, .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+}    
+    @media (max-width: 768px){
+    .first{
+min-height:100VH;
+background-size: cover;
+background-position: center;
+background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(3rd.jpg);
+background-repeat: no-repeat;
+color:white;
+    }
+}
+    </style>
+
+</head>
+<body>
+    <section class="first" id="home">
+<nav>
+<h2 class="logo"> LABEL X</h2>
+<ul>
+<li><a href="#home"> Home</a></li>
+<li> <a href="#collection"> Collection</a></li>
+<li> <a href="#about"> About</a></li>
+<li> <a href="#contact"> Contact </a></li>
+</ul>
+</nav>
+
+<div class="hero-content">
+<h1>
+    Premium tees | Street wear
+</h1>
+<P> Premium fashion for every Ocassion Trendy styles </P>
+<button> Order Now  </button>
+</div>
+
+    </section>
+
+    <section class="categories" id="collection">
+<h2> Our Collection</h2>
+<div class="category-boxes">
+
+<div class="box">
+    <h3> Men's wear
+    </h3>
+    <p>
+        Stylish outfits for every occasion
+    </p>
+</div>
+<div class="box">
+<h3> Our casual collection</h3>
+<P> Comfortable and Modern everyday fashion </P>
+
+</div>
+
+<div class="box">
+    <h3> Premium Styles </h3>
+    <P> Elegant looks with qaulity fabrics </P>
+</div>
+</div>
+    </section>
+    <section class="featured">
+<h2> Featured Collection </h2>
+<div class="featured-cards">
+<div class="card">
+<img src="label t1.jpeg" alt="Casual shirt ">
+<h3>  HUSTLE & CONQUER</h3>
+<p> Comfortable Style For daily wear.</p>
+</div>
+<div class="card">
+<img src="label t2.jpeg" alt="100% Preimuim cotton">
+<h3> 100% Preimuim Cotton</h3>
+<P> ARHE SO JHADE </P>
+</div>
+<div class="card">
+<img src="labelt3.jpeg" alt="Classic tshirt ">
+<h3> Preimuim oversized fit</h3>
+<p> Simple trendy and easy To style  </p>
+</div>
+
+</div>
+    </section>
+    <section class="about" id="about">
+<h2> About US </h2>
+<p> At LABEL.X , we believe fashion is more than just 
+    Clothing 
+
+    We bring you stylish ,comfortable,and high quality outfits
+
+    that match your personality and everyday lifestyle
+</p>
+
+
+    </section>
+
+
+<section class="contact" id="contact">
+<h2> Contact Us </h2>
+<P> Visit our store or get in touch got the latest fashion collection </P>
+<div class="contact-info">
+
+<p> <strong> Phone:</strong>+91 9878808520 </p>
+<p><strong> Email:</strong>LABELX.@email.com</p>
+</section>
+<footer>
+<p> @ 2026 LABEL.x. All rights reserved </p>
+
+
+</footer>
+</body>
+</html>
